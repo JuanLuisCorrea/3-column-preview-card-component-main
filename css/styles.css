@@ -22,10 +22,14 @@ html {
 body {
     background-color: var(--very_light_gray);
     font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 .container {
-    width: 85%;
+    width: 75%;
     margin: 80px auto;
 
     display: flex;
@@ -88,6 +92,7 @@ body {
 
 .contents__button {
     background-color: var(--very_light_gray);
+    border: 2px solid #ffffff;
     border-radius: 25px;
     display: inline-block;
     font-family: var(--lexend_deca);
@@ -96,6 +101,12 @@ body {
     text-decoration: none;
     text-align: center;
     width: 70%;
+}
+
+.contents__button:hover {
+    background: inherit;
+    color: var(--transparent_white);
+    cursor: pointer;
 }
 
 .contents__button--sedans {
